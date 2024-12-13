@@ -61,6 +61,22 @@ Performance:
 | `Bio_ClinicalBERT-finetuned-medicalcondition` | 63.46   |
 | `MedicalArticlesClassificationModelMultiLabel` | 63.50   |
 
+
+## Confusion Matrix
+
+The confusion matrix below represents the performance of the **MedicalArticlesClassificationModelMultiLabel** on the test dataset. Each row corresponds to the true class, and each column represents the predicted class.
+
+|              | Predicted Class 0 | Predicted Class 1 | Predicted Class 2 | Predicted Class 3 | Predicted Class 4 |
+|--------------|-------------------|-------------------|-------------------|-------------------|-------------------|
+| **Actual 0** | 0.83               | 0.03                | 0.039                | 0.017                | 0.084                |
+| **Actual 1** | 0.15                | 0.65               | 0.027                 | 0.03                 | 0.14                |
+| **Actual 2** | 0.088                | 0.029                | 0.64               | 0.073                | 0.17                |
+| **Actual 3** | 0.028                 | 0.013                | 0.048                | 0.79               | 0.12                |
+| **Actual 4** | 0.17               | 0.12               | 0.12               | 0.19               | 0.4               |
+
+The confusion matrix highlights the model's strengths in accurately predicting some classes, while showing areas where predictions for other classes could be improved. This provides a clear view of class-wise performance for multi-label classification.
+
+
 ## Conclusion
 
 The proposed 1D CNN demonstrated competitive performance compared to more parameter-heavy models like BERT, achieving substantial accuracy with only 1.8 million parameters. Traditional machine learning models also provided reasonable performance with much faster training times.
